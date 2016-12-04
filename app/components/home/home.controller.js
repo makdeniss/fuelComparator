@@ -7,6 +7,6 @@
     function homeController($scope, $http, $window, $q, sayHelloService) {
         var vm = this;
         vm.angularstrapService = sayHelloService;
-        sayHelloService
+        sayHelloService();
     }
 })();

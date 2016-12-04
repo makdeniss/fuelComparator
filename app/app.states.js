@@ -16,13 +16,13 @@ angular.module('fuelComparatorApp', ['ui.router'])
             .state('404', {
                 url: '/404',
                 templateUrl: 'app/shared/404.html'
-            })
-            .state('about', {
-                // we'll add another state soon
-                url: '/about',
-                templateUrl: 'app/components/about/views/about.view.html',
-                controller: 'aboutController',
-                controllerAs: 'ctrl'
+            // })
+            // .state('about', {
+            //     // we'll add another state soon
+            //     url: '/about',
+            //     templateUrl: 'app/components/about/views/about.view.html',
+            //     controller: 'aboutController',
+            //     controllerAs: 'ctrl'
             });
     }]);
 

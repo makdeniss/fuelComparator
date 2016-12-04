@@ -4,8 +4,8 @@
     angular.module('fuelComparatorApp.homeServices', []).service('sayHelloService', sayHelloService);
 
     function sayHelloService() {
-        function hello() {
-            console.log("hi from home servie");
+        function sayHi() {
+            console.log("hi from home service");
         }
     }
 })();

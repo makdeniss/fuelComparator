@@ -1,4 +1,4 @@
-angular.module('fuelComparatorApp', ['ui.router', 'fuelComparatorApp.homeServices'])
+angular.module('fuelComparatorApp', ['fuelComparatorApp.homeServices'])
     .constant('CONFIG',
         {
             DebugMode: true,

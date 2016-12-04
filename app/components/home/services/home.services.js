@@ -1,11 +1,10 @@
 (function () {
     'use strict';
 
-    angular.module('fuelComparatorApp.homeService', []).service('homeService', homeService);
-    
-    function homeService() {
-        function showHome() {
-            console.log("welome blah blah");
+    angular.module('fuelComparatorApp.homeServices', []).service('sayHelloService', sayHelloService);
+    function sayHelloService() {
+        function hello() {
+            console.log("hi from home servie");
         }
     }
 })();

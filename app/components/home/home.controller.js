@@ -2,11 +2,11 @@
     'use strict';
 
     angular.module('fuelComparatorApp').controller('homeController', homeController);
-    homeController.$inject = ["$scope", "$http", "$window", "$q", "homeService"];
+    homeController.$inject = ["$scope", "$http", "$window", "$q", "sayHelloService"];
 
-    function homeController($scope, $http, $window, $q, homeService) {
+    function homeController($scope, $http, $window, $q, sayHelloService) {
         var vm = this;
-        vm.angularstrapService = homeService;
-        homeService.$inject = ['$http'];
+        vm.angularstrapService = sayHelloService;
+        sayHelloService
     }
 })();

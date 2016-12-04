@@ -5,8 +5,9 @@
     homeController.$inject = ["$scope", "$http", "$window", "$q", "sayHelloService"];
 
     function homeController($scope, $http, $window, $q, sayHelloService) {
-        var vm = this;
-        vm.angularstrapService = sayHelloService;
-        sayHelloService();
+        const vm = this;
+        vm.fuelComparatorService = sayHelloService;
+        sayHelloService.sayHi();
+        return vm;
     }
 })();

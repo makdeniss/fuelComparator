@@ -4,20 +4,18 @@
     angular.module('fuelComparatorApp.homeServices', []).service('sayHelloService', sayHelloService);
     sayHelloService.$inject = ['$http', '$q'];
 
-    function sayHelloService($http, q) {
+    function sayHelloService() {
 
         const factory = {
             //properties
+            helloMessage: [],
             sayHi: sayHi
         };
 
         function sayHi(){
-            var defer = $q.defer();
-            // this will always resolve because this is hardcoded
-            defer.resolve();
-            console.log("hi from home service");
-
-            return defer.promise
+            factory.helloMessage =  {
+                Message: "hello message from helloService!"
+            };
         }
 
         return factory;

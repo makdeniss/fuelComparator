@@ -1,4 +1,4 @@
-angular.module('fuelComparatorApp', ['ui.router'])
+angular.module('fuelComparatorApp')
     .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider){
 
         $urlRouterProvider.otherwise('/404');

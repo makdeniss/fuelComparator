@@ -1,1 +1,1 @@
-angular.module('fuelComparatorApp', ['fuelComparatorApp.homeServices']);
+angular.module('fuelComparatorApp', ['ui.router', 'fuelComparatorApp.homeServices']);

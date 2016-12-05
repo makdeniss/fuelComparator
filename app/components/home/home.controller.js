@@ -8,6 +8,8 @@
         const vm = this;
         vm.fuelComparatorService = sayHelloService;
         sayHelloService.sayHi();
+        vm.hello = sayHelloService.helloMessage.Message;
+        console.log(vm.hello);
         return vm;
     }
 })();

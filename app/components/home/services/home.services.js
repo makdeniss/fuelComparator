@@ -2,8 +2,26 @@
     'use strict';
 
     angular.module('fuelComparatorApp.homeServices', [])
-        .service('sayHelloService', sayHelloService);
+        .service('sayHelloService', sayHelloService)
+        .service('someService', someService);
+
     sayHelloService.$inject = ['$http', '$q'];
+    someService.$inject = ['$http', '$q'];
+
+    function someService() {
+        const factory = {
+            someMessageObject: [],
+            someServiceMessage : someServiceMessage
+        };
+        
+        function someServiceMessage() {
+            factory.someMessageObject = {
+                someMessageString: "Some message from someService.someServiceMessage"
+            };
+        }
+        
+        return factory;
+    }
 
     function sayHelloService() {
         const factory = {

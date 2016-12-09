@@ -2,10 +2,11 @@
     'use strict';
 
     angular.module('fuelComparatorApp').controller('homeController', homeController);
-    homeController.$inject = ["$scope", "$http", "$window", "$q", "sayHelloService", "someService", "flagMainService"];
+    homeController.$inject = ["$scope", "$log", "$http", "$window", "$q", "sayHelloService", "someService", "flagMainService"];
 
-    function homeController($scope, $http, $window, $q, sayHelloService, someService, flagMainService) {
+    function homeController($scope, $log, $http, $window, $q, sayHelloService, someService, flagMainService) {
         const vm = this;
+
         // vm.fuelComparatorService = sayHelloService;
         // vm.fuelComparatorService = someService;
         // vm.fuelComparatorService = flagMainService;
@@ -21,11 +22,12 @@
         vm.whichFlag = flagMainService.value;
         vm.whichFlagFull = flagMainService.flag.Message;
 
-        console.log(vm.hello);
-        console.log(vm.bye);
-        console.log(vm.someMessage);
-        console.log(vm.whichFlag);
-        console.log(vm.whichFlagFull);
+        $log.info(vm.hello);
+        $log.info(vm.bye);
+        $log.info(vm.someMessage);
+        $log.info(vm.whichFlag);
+        $log.info(vm.whichFlagFull);
+
         return vm;
     }
 })();

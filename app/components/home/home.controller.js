@@ -14,7 +14,7 @@
         sayHelloService.sayHi();
         sayHelloService.sayBye();
         someService.someServiceMessage();
-        flagMainService.whichFlag("parameter passed");
+        flagMainService.whichFlag("incoming parameter");
 
         vm.hello = sayHelloService.helloMessage.Message;
         vm.bye = sayHelloService.byeMessage.Message;

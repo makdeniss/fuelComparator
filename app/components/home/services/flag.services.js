@@ -8,13 +8,15 @@
     function flagMainService() {
         const factory = {
             //properties
+            value: "",
             flag: [],
             whichFlag: whichFlag
         };
-        function whichFlag(){
+        function whichFlag(passedValue){
             factory.flag =  {
                 Message: "what flag is this?"
             };
+            factory.value = passedValue
         }
 
         return factory;

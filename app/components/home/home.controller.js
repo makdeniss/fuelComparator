@@ -13,12 +13,12 @@
         sayHelloService.sayHi();
         sayHelloService.sayBye();
         someService.someServiceMessage();
-        flagMainService.whichFlag();
+        flagMainService.whichFlag("test");
 
         vm.hello = sayHelloService.helloMessage.Message;
         vm.bye = sayHelloService.byeMessage.Message;
         vm.someMessage = someService.someMessageObject.someMessageString;
-        vm.whichFlag = flagMainService.flag.Message;
+        vm.whichFlag = flagMainService.value;
 
         console.log(vm.hello);
         console.log(vm.bye);

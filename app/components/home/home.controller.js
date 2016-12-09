@@ -13,17 +13,19 @@
         sayHelloService.sayHi();
         sayHelloService.sayBye();
         someService.someServiceMessage();
-        flagMainService.whichFlag("test");
+        flagMainService.whichFlag("parameter passed");
 
         vm.hello = sayHelloService.helloMessage.Message;
         vm.bye = sayHelloService.byeMessage.Message;
         vm.someMessage = someService.someMessageObject.someMessageString;
         vm.whichFlag = flagMainService.value;
+        vm.whichFlagFull = flagMainService.flag.Message;
 
         console.log(vm.hello);
         console.log(vm.bye);
         console.log(vm.someMessage);
         console.log(vm.whichFlag);
+        console.log(vm.whichFlagFull);
         return vm;
     }
 })();

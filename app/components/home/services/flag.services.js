@@ -13,10 +13,10 @@
             whichFlag: whichFlag
         };
         function whichFlag(passedValue){
+            factory.value = passedValue;
             factory.flag =  {
-                Message: "what flag is this?"
+                Message: "message from flagMainService.whichFlag() with passed parameter: " + factory.value + "! "
             };
-            factory.value = passedValue
         }
 
         return factory;

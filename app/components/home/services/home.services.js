@@ -23,6 +23,7 @@
         return factory;
     }
 
+    // bad design. one service and one function per service.
     function sayHelloService() {
         const factory = {
             //properties
@@ -33,13 +34,13 @@
         };
         function sayHi(){
             factory.helloMessage =  {
-                Message: "hello message from helloService!"
+                Message: "hello message from helloService.sayHelloService()!"
             };
         }
 
         function sayBye(){
             factory.byeMessage =  {
-                Message: "bye message from helloService!"
+                Message: "bye message from helloService.sayBye()!"
             };
         }
 

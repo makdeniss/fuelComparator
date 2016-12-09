@@ -6,9 +6,9 @@
 
     function homeController($scope, $http, $window, $q, sayHelloService, someService, flagMainService) {
         const vm = this;
-        vm.fuelComparatorService = sayHelloService;
-        vm.fuelComparatorService = someService;
-        vm.fuelComparatorService = flagMainService;
+        // vm.fuelComparatorService = sayHelloService;
+        // vm.fuelComparatorService = someService;
+        // vm.fuelComparatorService = flagMainService;
 
         sayHelloService.sayHi();
         sayHelloService.sayBye();
